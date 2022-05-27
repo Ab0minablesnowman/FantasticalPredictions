@@ -19,8 +19,5 @@ Depends:
   dplyr,
   tidyr,
   tidyselect
-Imports: 
-  ffanalytics
-Remotes:
-    github::FantasyFootballAnalytics/ffanalytics
+
 

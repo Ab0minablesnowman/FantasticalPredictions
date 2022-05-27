@@ -19,5 +19,5 @@ Depends:
   dplyr,
   tidyr,
   tidyselect
-
-
+Imports: 
+    ffanalytics

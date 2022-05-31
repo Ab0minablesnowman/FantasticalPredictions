@@ -1,6 +1,6 @@
 Package: FantasticalPredictions
 Title: Fantasy Football Scraping and Analysis
-Version: 0.0.0.9000
+Version: 0.0.1.0
 Authors@R: 
     person("Alex", "Waters", , "waters.alexm@gmail.com", role = c("aut", "cre"),
            )

@@ -152,7 +152,33 @@ DraftScrapewithProjections<-function(season){
   ProjectionsFinal<-ProjectionsFinal[order(
     ProjectionsFinal$position,-ProjectionsFinal$HalfPPR), ] %>%
     mutate(across(where(is.numeric), round, 2)) %>%
-    filter(team != "NA")
+    filter(team != "NA") %>%
+    elect("Season","name","position","team",
+          "pass_yds","pass_tds","pass_att","pass_comp","pass_int",
+          "pass_250_yds", "pass_300_yds","pass_350_yds","pass_2029_tds",
+          "pass_3039_tds", "pass_4049_tds", "pass_50_tds", "sacks",
+
+          "rec","rec_yds","rec_tds","rec_tgt","rec_rz_tgt","rec_50_yds", "rec_100_yds",
+          "rec_150_yds","rec_200_yds","rec_09_tds", "rec_1019_tds",
+          "rec_2029_tds", "rec_3039_tds", "rec_4049_tds", "rec_50_tds",
+
+          "rush_yds","rush_tds","rush_att","rush_50_yds","rush_100_yds",
+          "rush_09_tds", "rush_1019_tds", "rush_2029_tds", "rush_3039_tds",
+          "rush_4049_tds", "rush_50_tds",
+
+          "fumbles_lost",
+
+          "fg","fg_att","xp","fg_att_0019","fg_0019", "fg_att_2029","fg_2029",
+          "fg_att_3039","fg_3039", "fg_att_4049","fg_4049", "fg_att_50","fg_50",
+
+          "dst_sacks", "dst_int","dst_fum_rec","dst_fum_force", "dst_td","dst_safety","dst_pts_allowed", "dst_yds_allowed",
+          "dst_yds_199","dst_yds_299","dst_yds_349","dst_yds_399",
+          "dst_yds_449","dst_yds_499","dst_yds_549","dst_yds_550",
+          "dst_pts_6","dst_pts_13","dst_pts_17","dst_pts_20","dst_pts_27","dst_pts_34","dst_pts_45",
+          "dst_tackles", "dst_pts_allowed_g", "dst_pass_yds_allowed", "dst_rush_yds_allowed",
+          "dst_avg_yds_allowed",
+
+          "Standard","HalfPPR","PPR")
 
 
   ProjectionsFinal

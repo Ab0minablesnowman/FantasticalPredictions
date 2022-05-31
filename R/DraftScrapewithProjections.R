@@ -88,7 +88,7 @@ DraftScrapewithProjections<-function(season){
                                             season = {season}, week = 0))
 
   #Taking out individual Stats from FFAnalytics#
-  my_scrapeDF<-suppressMessages(quiet(full_join(
+  my_scrapeDF<-suppressMessages(full_join(
     do.call(cbind.data.frame, my_scrape$K),
     full_join(
       do.call(cbind.data.frame, my_scrape$DST),
@@ -98,13 +98,13 @@ DraftScrapewithProjections<-function(season){
           do.call(cbind.data.frame, my_scrape$WR),
           full_join(
             do.call(cbind.data.frame, my_scrape$QB),
-            do.call(cbind.data.frame, my_scrape$RB))))))) %>%
+            do.call(cbind.data.frame, my_scrape$RB)))))) %>%
       filter(data_src !="NA"))
 
-  DF1<- suppressMessages(quiet(my_scrapeDF[, !names(my_scrapeDF) %in% c("pos", "src_id")] %>%
+  DF1<- suppressMessages(my_scrapeDF[, !names(my_scrapeDF) %in% c("pos", "src_id")] %>%
                                  add_player_info() %>%
                                  mutate(team = team.x) %>%
-                                 unite( "name", first_name:last_name, sep=" ")))
+                                 unite( "name", first_name:last_name, sep=" "))
   DF2<-DF1[, !names(DF1) %in% c("team.y", "age", "exp", "player","team.x","first_name","last_name","chg","tm",
                                 "fg_miss", "xp_miss", "xp_att",
                                 "site_ci_low", "site_ci_high", "opp_team", "opp_team_rank", "ranks_pos", "...27",

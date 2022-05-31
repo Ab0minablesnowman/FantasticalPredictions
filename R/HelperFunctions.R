@@ -27,6 +27,7 @@ moveMe <- function(data, tomove, where = "last", ba = NULL) {
 
 #' Quiet - Reduces Console outputs
 #' @param x Function.
+#' @export
 #' @examples
 #' Projections<-quiet(ScrapewithProjections(2021, 15))
 quiet <- function(x) {

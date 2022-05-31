@@ -16,7 +16,3 @@ moveMe(data, tomove, where = "last", ba = NULL)
 \description{
 Moveme - Move columns
 }
-\examples{
-ProjectionsFinal<-moveMe(ProjectionsFinal, c("Season", "Week"), "first")
-ProjectionsFinal<-moveMe(ProjectionsFinal, c("Season", "Week"), "last")
-}

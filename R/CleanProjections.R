@@ -1,10 +1,8 @@
 #' Removing many columns from initial scraping.
 #' Must use "DraftScrapewithProjections" prior to this
-#' @param DraftProjections Table from "DraftScrapewithProjections"
+#' @param DraftProjections An output from the \link{DraftScrapewithProjections} function
 #' @export
-#' @examples
-#' df<-CleanProjections(DraftProjections)
-#'
+
 CleanProjections<-function(DraftProjections){
   DraftprojectionsLessNoise<-{DraftProjections}[, !names({DraftProjections}) %in%
                                                  c("dst_yds_199","dst_yds_299","dst_yds_349","dst_yds_399",

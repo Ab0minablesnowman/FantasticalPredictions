@@ -12,6 +12,3 @@ quiet(x)
 \description{
 Quiet - Reduces Console outputs
 }
-\examples{
-Projections<-quiet(ScrapewithProjections(2021, 15))
-}

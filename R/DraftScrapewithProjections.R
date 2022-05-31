@@ -1,9 +1,7 @@
 #' Scraping Projections from variety of sources for FF Draft
 #' @param season Specific NFL season
 #' @export
-#' @examples
-#' Draftprojections<-DraftScrapewithProjections(2022)
-#'
+
 DraftScrapewithProjections<-function(season){
 
   #Mappers#

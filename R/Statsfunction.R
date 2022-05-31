@@ -2,10 +2,7 @@
 #' @param seasons Specific NFL season
 #' @param stat_type Type of Stats ("players", "defense_by_position","defense_by_depthposition","teams")
 #' @export
-#' @examples
-#' PlayerStats<-Statsfunction(Seasonforinputs,"players")
-#'
-#'
+
 Statsfunction<- function (seasons, stat_type = c("players", "defense_by_position","defense_by_depthposition","teams")){
   options(digits = 2)
   #Mappers#

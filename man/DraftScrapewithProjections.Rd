@@ -12,7 +12,3 @@ DraftScrapewithProjections(season)
 \description{
 Scraping Projections from variety of sources for FF Draft
 }
-\examples{
-Draftprojections<-DraftScrapewithProjections(2022)
-
-}

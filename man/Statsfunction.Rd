@@ -17,8 +17,3 @@ Statsfunction(
 \description{
 Stats during NFL season from nflVerse Packages
 }
-\examples{
-PlayerStats<-Statsfunction(Seasonforinputs,"players")
-
-
-}

@@ -19,4 +19,6 @@ Depends:
   dplyr,
   tidyr,
   tidyselect
- 
+Suggest: ffanalytics
+Remotes: FantasyFootballAnalytics/ffanalytics
+

@@ -8,13 +8,9 @@ Must use "DraftScrapewithProjections" prior to this}
 CleanProjections(DraftProjections)
 }
 \arguments{
-\item{DraftProjections}{Table from "DraftScrapewithProjections"}
+\item{DraftProjections}{An output from the \link{DraftScrapewithProjections} function}
 }
 \description{
 Removing many columns from initial scraping.
 Must use "DraftScrapewithProjections" prior to this
-}
-\examples{
-df<-CleanProjections(DraftProjections)
-
 }

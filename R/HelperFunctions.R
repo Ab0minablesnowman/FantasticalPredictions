@@ -3,9 +3,6 @@
 #' @param tomove Specific Column(s).
 #' @param where Location of Column relative to others.
 #' @export
-#' @examples
-#' ProjectionsFinal<-moveMe(ProjectionsFinal, c("Season", "Week"), "first")
-#' ProjectionsFinal<-moveMe(ProjectionsFinal, c("Season", "Week"), "last")
 moveMe <- function(data, tomove, where = "last", ba = NULL) {
   temp <- setdiff(names(data), tomove)
   x <- switch(
@@ -28,8 +25,7 @@ moveMe <- function(data, tomove, where = "last", ba = NULL) {
 #' Quiet - Reduces Console outputs
 #' @param x Function.
 #' @export
-#' @examples
-#' Projections<-quiet(ScrapewithProjections(2021, 15))
+
 quiet <- function(x) {
   sink(tempfile())
   on.exit(sink())

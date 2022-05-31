@@ -14,7 +14,3 @@ ScrapewithProjections(season, week)
 \description{
 Scraping Projections from variety of sources
 }
-\examples{
-Projections<-ScrapewithProjections(2021, 15)
-
-}

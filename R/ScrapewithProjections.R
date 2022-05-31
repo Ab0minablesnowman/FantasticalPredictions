@@ -2,9 +2,6 @@
 #' @param season Specific NFL season
 #' @param week Specific Week within NFL Season
 #' @export
-#' @examples
-#' Projections<-ScrapewithProjections(2021, 15)
-#'
 ScrapewithProjections<-function(season, week){
 
   #Mappers#
